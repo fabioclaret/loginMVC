@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/download"/>
+    
+    <EditText android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:hint="Informe o email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"/>
+
+    <EditText android:id="@+id/edt_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:hint="Informe a senha"
+        android:inputType="numberPassword"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#373636">
+
+        <Button android:id="@+id/btn_cadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="#E91E63"
+            android:padding="16dp"
+            android:text="Cadastrar"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"/>
+
+        <Button android:id="@+id/btn_entrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_margin="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#504B4C"
+            android:padding="16dp"
+            android:text="Já tenho Cadastro"
+            android:textSize="16sp"
+            app:cornerRadius="10dp"/>
+    </LinearLayout>
+</LinearLayout>
