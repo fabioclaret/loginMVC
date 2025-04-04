@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
                     usuario.setNome(user);
                     usuario.setSenha(String.valueOf(senha));
 
-                    String msg = UsuarioDataModel.TABELA;
-                    AppUtil.mensagem2(getApplicationContext(), msg);
+                    //String msg = UsuarioDataModel.TABELA;
+                    //AppUtil.mensagem2(getApplicationContext(), msg);
                     boolean isCheckUser = controller.usuario(user);
                     if(!isCheckUser){
                         AppUtil.mensagem(getApplicationContext(), "Usuario Ainda Nao Cadastrado");

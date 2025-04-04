@@ -59,8 +59,10 @@ public class AppDataBase extends SQLiteOpenHelper {
         boolean retorno = false;
         db = getWritableDatabase();
 
-        Cursor cursor = db.rawQuery("SELECT *FROM "+UsuarioDataModel.TABELA +" WHERE email = ? " +
-                        " AND password = ?",
+        String msg = UsuarioDataModel.TABELA;
+
+        Cursor cursor = db.rawQuery("SELECT *FROM " + msg +" WHERE email = ? " +
+                        " AND senha = ?",
                 new String[] {userName, password});
         return cursor.getCount() > 0;
     }
